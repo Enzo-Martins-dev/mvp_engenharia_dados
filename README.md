@@ -225,12 +225,10 @@ Esse último ponto é também um resultado do trabalho: o pipeline respondeu às
 
 ## 7. Autoavaliação
 
-> Seção a ser preenchida pelo autor. Roteiro do que abordar:
->
-> - **Objetivos atingidos.** Quais das quatro perguntas foram respondidas de forma satisfatória e quais ficaram parciais, e por quê.
-> - **Dificuldades encontradas.** Por exemplo: a restrição de rede do Databricks Free Edition, a paginação obrigatória por modalidade na API, a definição do que conta como "sucesso" de uma contratação diante de tantos valores ausentes.
-> - **Decisões que tomaria diferente.** Por exemplo: incluir o endpoint de contratos para ter o fornecedor, ampliar o período para reduzir o viés de maturidade, tratar os outliers de valor antes das agregações.
-> - **O que aprendeu.** Sobre arquitetura em camadas, catálogo de dados, ou sobre a diferença entre um dado existir e um dado ser utilizável.
+> - **Objetivos atingidos.** Consegui analisar com clareza os diferentes dados do pncp, deixando claro que 
+> - **Dificuldades encontradas.** A maior dificuldade foi decidir qual das apis utilizar, pois existe a pncp/pncp, a pncp/search, a pncp/consulta e a do comprasgov. Além disso, organizar os dados em um formato que favorecesse as analises na camada ouro também foi desafiador, criar um design funcional e eficiente exige conhecer bem os dados que se está trabalhando.
+> - **Decisões que tomaria diferente.** Eu gostaria de ter incluido outros endpoints além do de contratacões, visando possibilitar analises mais completas e úteis.
+> - **O que aprendeu.** Aprendi a organizar dados externos de forma a atingir os objetivos de negócio que desejo, além de aprender sobre a plataforma Databricks, data lakes e modelagem de dados.
 > - **Trabalhos futuros.** Carga incremental via `/v1/contratacoes/atualizacao`, cruzamento com `/v1/contratos` para analisar fornecedores, extensão para outras UFs.
 
 ---
