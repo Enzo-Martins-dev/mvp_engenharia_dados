@@ -217,15 +217,16 @@ Abril também concentra o valor estimado anômalo de R$ 370 bilhões, provavelme
 
 ### Discussão geral
 
-O conjunto das respostas aponta três coisas. A contratação direta responde por mais da metade dos processos no Pará, ainda que concentrada em valores baixos. O que determina se uma contratação chega ao fim registrado é principalmente o rito escolhido, e não o valor envolvido. E o PNCP serve bem para contagens e medidas de tendência central, mas não para somas financeiras sem tratamento prévio de outliers, além de ter uma parcela relevante de registros que apenas repetem o valor estimado no campo do homologado.
-
-Esse último ponto é também um resultado do trabalho: o pipeline respondeu às perguntas e, no processo, delimitou até onde a fonte permite respondê-las.
+O conjunto das respostas aponta três coisas:
+ - A contratação direta responde por mais da metade dos processos no Pará, ainda que concentrada em valores baixos. 
+ - O que determina se uma contratação chega ao fim registrado é principalmente o rito escolhido, e não o valor envolvido. 
+ - O PNCP serve bem para contagens e medidas de tendência central, mas não para somas financeiras sem tratamento prévio de outliers, além de ter uma parcela relevante de registros que apenas repetem o valor estimado no campo do homologado.
 
 ---
 
 ## 7. Autoavaliação
 
-> - **Objetivos atingidos.** Consegui analisar com clareza os diferentes dados do pncp, deixando claro que 
+> - **Objetivos atingidos.** Consegui analisar com clareza os diferentes dados do pncp, identificando problemas de outliers distorcendo medias no caminho, principalmente no que se trata de valores financeiros, alem do provavel não preenchemento do valor homologado, apenas copiando o valor do valor estimado. No fim, consegui extrair os dados automaticamente da api do pncp, com periodo delimitado e possibilitando altera-lo, modelar os dados de forma a facilitar analises e identificar possíveis problemas nos dados do PNCP, além de respondar as perguntas de negócio. 
 > - **Dificuldades encontradas.** A maior dificuldade foi decidir qual das apis utilizar, pois existe a pncp/pncp, a pncp/search, a pncp/consulta e a do comprasgov. Além disso, organizar os dados em um formato que favorecesse as analises na camada ouro também foi desafiador, criar um design funcional e eficiente exige conhecer bem os dados que se está trabalhando.
 > - **Decisões que tomaria diferente.** Eu gostaria de ter incluido outros endpoints além do de contratacões, visando possibilitar analises mais completas e úteis.
 > - **O que aprendeu.** Aprendi a organizar dados externos de forma a atingir os objetivos de negócio que desejo, além de aprender sobre a plataforma Databricks, data lakes e modelagem de dados.
